@@ -1,0 +1,36 @@
+ul.list-results{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 3rem;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .result-item{
+        display:flex;
+        background-color: $white;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        .thumbnail {
+            width: 160px;
+            height: 160px;
+            img{
+            width: 100%;
+            }
+        }
+        .item-content {
+            display: flex;
+            flex-grow: 1;
+            margin-left: 1rem;
+            .info{
+            width: 80%;
+            }
+            .price{
+            color: $orange;
+            }
+        }
+
+    }  
+}
+

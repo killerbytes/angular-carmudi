@@ -24,9 +24,7 @@
       </div>
     </header>
 
-    <div class="container">
-      <div ng-view=""></div>
-    </div>
+    <div class="container" ng-view=""></div>
 
     <footer>
       <div class="container">
@@ -34,7 +32,7 @@
           <div class="logo">
             <img src="images/logo-2.png" alt="">
           </div>
-          2016 by Carmudi Philippines, Inc.
+          <p class="text-center">2016 by Carmudi Philippines, Inc.</p>
           
         </div>
       </div>
@@ -52,8 +50,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/details.js"></script>
+        <script src="scripts/directives/result-item.js"></script>
         <!-- endbuild -->
 </body>
 </html>

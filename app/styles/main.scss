@@ -1,7 +1,19 @@
+$gray: #f2f2f2;
+$white: #FFF;
+$black: #1a1a1a;
+$orange: #f36519;
+
 // bower:scss
 @import "font-awesome/scss/font-awesome.scss";
 // endbower
 
+@import "components/results";
+@import "components/helpers";
+
+body{
+  background-color: $gray;
+  font-size: 12px;
+}
 
 .container{
   display: flex;
@@ -15,13 +27,32 @@
   }
 }
 
-footer{
-  background-color: #000;
-  color: #FFF;
+header{
+  padding: 1rem;
+  background-color: $white;
+  .logo{
+    text-align: center;
+  }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+footer{
+  margin-top: 3rem;
+  padding: 1rem;
+  padding-bottom: .5rem;
+  background-color: $black;
+  color: #FFF;
+  text-align: center;
+  .logo{
+    text-align: left;
+  }
+}
+
+.main{
+  width: 65%;
+  margin: auto;
+}
+
+.title-results{
+  font-weight: bold;
+  margin: 1rem 0;
 }
