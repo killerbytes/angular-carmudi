@@ -1,0 +1,27 @@
+// bower:scss
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 70rem;;
+  margin: auto;
+  .columns{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 1 1 0px;
+  }
+}
+
+footer{
+  background-color: #000;
+  color: #FFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
