@@ -30,13 +30,11 @@ angular.module('carmudiApp')
           scope.nextDisabled = pager.currentPage == scope.pages;
           scope.prevDisabled = pager.currentPage <= 1;
 
-
         })
 
         scope.select = function(page){
           $route.updateParams({page: page});
         }
-
 
         scope.previous = function(){
           var page = parseInt(pager.currentPage) - 1;

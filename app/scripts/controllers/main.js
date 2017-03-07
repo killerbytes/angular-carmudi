@@ -10,7 +10,7 @@
 angular.module('carmudiApp')
   .controller('MainCtrl', function ($scope, $routeParams, carService) {
     $scope.pager = {
-      currentPage: $routeParams.page,
+      currentPage: $routeParams.page || 1,
       limit: 10
     }
     

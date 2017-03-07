@@ -7,29 +7,29 @@ ul.list-results{
         text-decoration: none;
         color: #000;
     }
-    .result-item{
-        @extend .bordered;
-        display:flex;
-        background-color: $white;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        .thumbnail {
-            width: 160px;
-            height: 160px;
-            img{
-                width: 100%;
-                display: none;
-            }
-        }
-        .item-content {
-            display: flex;
-            flex-grow: 1;
-            margin-left: 1rem;
-            .info{
-                width: 80%;
-            }
-        }
-
-    }  
 }
 
+.result-item{
+    @extend .bordered;
+    @extend .flex;
+    background-color: $white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    .thumbnail {
+        min-width: 160px;
+        height: 160px;
+        img{
+            width: 100%;
+            display: none;
+        }
+    }
+    .item-content {
+        @extend .flex;
+        flex-grow: 1;
+        .info{
+            width: 80%;
+            padding: 0 1rem;
+        }
+    }
+
+}  

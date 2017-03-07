@@ -4,7 +4,7 @@
         <div class="flex">
             <div class="slider-container bordered">
                 <div class="slider">
-                    <div class="slider-theater">
+                    <div class="slider-theater" ng-style="{'background-image': 'url('+ model.main_picture +')'}">
                         <img ng-src={{model.main_picture}} alt="">
                     </div>
                     <div class="slider-navigation">
@@ -28,8 +28,8 @@
             </div>
             <div class="details bordered">
                 <div class="columns">
-                    <div class="price">
-                        <h2>{{model.price}}</h2>
+                    <div>
+                        <h2 class="price">{{model.price}}</h2>
                     </div>
                     <p class="location">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>

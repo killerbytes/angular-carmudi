@@ -1,0 +1,38 @@
+@media only screen 
+and (max-width: 768px) {
+    .flex{
+        display: block;
+    }
+    .details,
+    .slider-container{
+        width: auto;
+        max-width: initial;
+        padding: 0;
+        margin-left: 0;
+    }
+    .result-item{
+        display: block;
+        .thumbnail{
+            width: auto;
+        }
+        .item-content{
+            display: block;
+            .info{
+                width: auto;
+                padding: 0;
+            }
+            
+        }
+    }
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .main,
+    .row{
+        width: 100%;
+    }
+    footer .logo{
+        text-align: center;
+    }
+}

@@ -86,8 +86,13 @@ footer{
 .page-title{
   margin-top: 5rem;
 }
+
 .price{
     color: $secondary;
+    white-space: nowrap;
+    sup{
+      top: -.3em;
+    }
 }
 
 .location{
@@ -99,9 +104,12 @@ footer{
 
 .details{
   background-color: $white;
-  width: 35%;
+  flex: 0 0 30%;
+  min-width: initial;
+  max-width: 25%;
   padding: 1rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   .location{
     margin-bottom: 4rem;
   }
@@ -112,6 +120,10 @@ footer{
     background-position: center center;
     background-repeat: no-repeat;
     img{
-        display: none;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
     }                
 }
+
+@import "media";
