@@ -1,7 +1,8 @@
-$gray: #f2f2f2;
+$primary: #165AA7;
+$secondary: #f36519;
+$grey: #f2f2f2;
 $white: #FFF;
 $black: #1a1a1a;
-$orange: #f36519;
 
 // bower:scss
 @import "font-awesome/scss/font-awesome.scss";
@@ -9,9 +10,12 @@ $orange: #f36519;
 
 @import "components/results";
 @import "components/helpers";
+@import "components/pager";
+@import "components/buttons";
+
 
 body{
-  background-color: $gray;
+  background-color: $grey;
   font-size: 12px;
 }
 

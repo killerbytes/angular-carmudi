@@ -2,7 +2,7 @@ ul.list-results{
     padding: 0;
     margin: 0;
     list-style-type: none;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     a{
         text-decoration: none;
         color: inherit;
@@ -27,7 +27,7 @@ ul.list-results{
             width: 80%;
             }
             .price{
-            color: $orange;
+            color: $secondary;
             }
         }
 
