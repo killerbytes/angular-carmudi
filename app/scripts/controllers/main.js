@@ -17,6 +17,8 @@ angular.module('carmudiApp')
     carService.findAll($scope.pager.currentPage, $scope.pager.limit).then(function(res){
       $scope.results = res.data;
       $scope.pager.total = res.total;
+    }, function(err){
+      //handle error
     });
     
   });

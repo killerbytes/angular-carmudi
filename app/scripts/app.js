@@ -15,7 +15,8 @@ angular
     'ngSanitize'
   ])
   .constant('api', {
-    url: 'http://localhost:3000'
+    // url: 'http://localhost:3000'
+    url: 'https://carmudi.herokuapp.com'
   })
   .config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.cache = true;

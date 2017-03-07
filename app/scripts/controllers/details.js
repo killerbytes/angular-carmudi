@@ -14,6 +14,8 @@ angular.module('carmudiApp')
     if($routeParams.id){
       carService.findRecord($routeParams.id).then(function(res){
         $scope.model = res;
+      }, function(err){
+        //handle error
       })
     }
   });
