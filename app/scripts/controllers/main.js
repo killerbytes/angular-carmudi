@@ -8,5 +8,10 @@
  * Controller of the carmudiApp
  */
 angular.module('carmudiApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope, carService) {
+    $scope.pager = {}
+    carService.findAll().then(function(res){
+      $scope.results = res.data;
+      $scope.pager.total = res.total;
+    })
   });

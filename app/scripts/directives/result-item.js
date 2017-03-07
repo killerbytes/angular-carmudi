@@ -12,6 +12,9 @@ angular.module('carmudiApp')
       templateUrl: 'views/directives/result-item.html',
       replace: true,
       restrict: 'E',
+      scope: {
+        item: "="
+      },
       link: function postLink(scope, element, attrs) {
       }
     };

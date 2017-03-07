@@ -25,6 +25,9 @@ body{
   color: $body-text;
   font-size: 12px;
 }
+h2{
+  font-size: 20px;
+}
 
 .container{
   display: flex;
@@ -41,8 +44,10 @@ body{
 header{
   padding: 1rem;
   background-color: $white;
+  border-bottom: 2px solid $border-color;
   .logo{
     text-align: center;
+    display: block;
   }
 }
 
@@ -74,7 +79,7 @@ footer{
 
 .results-title{
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .page-title{
   margin-top: 5rem;

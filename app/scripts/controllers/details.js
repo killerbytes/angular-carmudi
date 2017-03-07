@@ -8,5 +8,11 @@
  * Controller of the carmudiApp
  */
 angular.module('carmudiApp')
-  .controller('DetailsCtrl', function () {
+  .controller('DetailsCtrl', function ($scope, $routeParams, carService) {
+
+    if($routeParams.id){
+      carService.findRecord($routeParams.id).then(function(res){
+        $scope.model = res;
+      })
+    }
   });

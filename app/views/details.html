@@ -1,11 +1,11 @@
 <div class="row">
     <div class="columns">
-        <h2 class="page-title">Hyunda Getz sedan 2009</h2>
+        <h2 class="page-title">{{model.name}}</h2>
         <div class="flex">
             <div class="slider-container bordered">
                 <div class="slider">
                     <div class="slider-theater">
-                        <img src="http://placehold.it/910x606" alt="">
+                        <img ng-src={{model.main_picture}} alt="">
                     </div>
                     <div class="slider-navigation">
                         <button class="slider-arrows">
@@ -29,13 +29,13 @@
             <div class="details bordered">
                 <div class="columns">
                     <div class="price">
-                        <h2>880,000.000</h2>
+                        <h2>{{model.price}}</h2>
                     </div>
                     <p class="location">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        Location, very long location
+                        {{model.location}}
                     </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, illum nostrum corporis repudiandae modi voluptates consequatur iure rem dolore, ipsam molestiae quisquam cupiditate tenetur veniam consequuntur impedit eaque architecto eum.</p>
+                    <p>{{model.description}}</p>
                     
                 </div>
             </div>

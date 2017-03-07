@@ -14,6 +14,9 @@ angular
     'ngRoute',
     'ngSanitize'
   ])
+  .constant('api', {
+    url: 'http://localhost:3000'
+  })
   .config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.cache = true;
   }])
@@ -27,12 +30,7 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .when('/details', {
+      .when('/details/:id', {
         templateUrl: 'views/details.html',
         controller: 'DetailsCtrl',
         controllerAs: 'details'
