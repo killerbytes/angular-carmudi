@@ -1,0 +1,40 @@
+.slider-container{
+    background-color: $white;
+}
+.slider{
+    img{
+        width: 100%;
+    }
+    ul.slider-list-navigation{
+        list-style-type: none;
+        margin: 1rem;
+        padding: 0;
+        display: flex;
+        width: 90%;
+        li{
+            margin-right: 1rem;
+            a{
+                display: block;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+    }
+    .slider-navigation{
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+        button.slider-arrows{
+            background-color: $primary;
+            padding: 0;
+            margin: 1rem;
+            color: $white;
+            font-size: 40px;
+            border: none;
+            width: 50px;
+            height: 45px;
+            line-height: 0;
+        }
+    }
+}

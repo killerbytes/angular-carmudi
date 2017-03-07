@@ -1,8 +1,11 @@
 $primary: #165AA7;
 $secondary: #f36519;
 $grey: #f2f2f2;
+$text-gray: #696969;
 $white: #FFF;
 $black: #1a1a1a;
+$body-text: #363D41;
+$border-color: #e6e6e6;
 
 // bower:scss
 @import "font-awesome/scss/font-awesome.scss";
@@ -12,17 +15,21 @@ $black: #1a1a1a;
 @import "components/helpers";
 @import "components/pager";
 @import "components/buttons";
+@import "components/slider";
 
-
+html{
+  font-size: 75%;
+}
 body{
   background-color: $grey;
+  color: $body-text;
   font-size: 12px;
 }
 
 .container{
   display: flex;
   flex-flow: row wrap;
-  max-width: 70rem;;
+  max-width: 90rem;;
   margin: auto;
   .columns{
     padding-left: 1rem;
@@ -50,13 +57,45 @@ footer{
     text-align: left;
   }
 }
-
+.flex{
+  display: flex;
+  .flex-2{
+    width: 50%;
+  }
+}
+.row{
+  width: 90%;
+  margin: auto;
+}
 .main{
   width: 65%;
   margin: auto;
 }
 
-.title-results{
+.results-title{
   font-weight: bold;
   margin: 1rem 0;
+}
+.page-title{
+  margin-top: 5rem;
+}
+.price{
+    color: $secondary;
+}
+
+.location{
+  color: $text-gray;
+  .fa{
+    margin-right: 3px;
+  }
+}
+
+.details{
+  background-color: $white;
+  width: 35%;
+  padding: 1rem;
+  margin-left: 1rem;
+  .location{
+    margin-bottom: 4rem;
+  }
 }

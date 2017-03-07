@@ -5,9 +5,10 @@ ul.list-results{
     margin-bottom: 1rem;
     a{
         text-decoration: none;
-        color: inherit;
+        color: #000;
     }
     .result-item{
+        @extend .bordered;
         display:flex;
         background-color: $white;
         padding: 1rem;
@@ -16,7 +17,7 @@ ul.list-results{
             width: 160px;
             height: 160px;
             img{
-            width: 100%;
+                width: 100%;
             }
         }
         .item-content {
@@ -24,10 +25,7 @@ ul.list-results{
             flex-grow: 1;
             margin-left: 1rem;
             .info{
-            width: 80%;
-            }
-            .price{
-            color: $secondary;
+                width: 80%;
             }
         }
 
