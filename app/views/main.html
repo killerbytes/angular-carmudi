@@ -1,8 +1,14 @@
+
+
 <div class="main">
     <div class="columns">
-        <div class="results-title">Displaying 1-9 of 345 Results</div>
+        <div class="search-box">
+            <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search icons</span></label>            
+            <input type="text" id="search-input" ng-model="query.name" placeholder="Search...">
+        </div>
+        <div class="results-title">Displaying {{(pager.currentPage * pager.limit)-pager.limit+1}}-{{pager.currentPage * pager.limit >= pager.total ? pager.total : pager.currentPage * pager.limit}} of {{pager.total}} Results</div>
         <ul class="list-results">
-            <li ng-repeat="item in results track by $index">
+            <li ng-repeat="item in results | filter: query track by $index">
                 <a href="#/details/{{item.id}}"><result-item item="item"></result-item></a>
             </li>
         </ul>

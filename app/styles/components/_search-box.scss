@@ -1,0 +1,15 @@
+.search-box{
+    margin: 1rem 0;
+    position: relative;
+    label{
+        position: absolute;
+        top: .8rem;
+        left: 1rem;
+    }
+    input{
+        padding: .75rem;
+        padding-left: 2.5rem;
+        width: 100%;
+        border: 2px solid $border-color;
+    }
+}
