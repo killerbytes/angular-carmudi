@@ -1,13 +1,10 @@
 <div class="pager">
     <ul class="list-pager">
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="" class="active">3</a></li>
-        <li><a href="">4</a></li>
-        <li><a href="">...</a></li>
-        <li><a href="">12</a></li>
-        <li><a href="">13</a></li>
+        <li ng-repeat="item in items track by $index"><a ng-click="select(item+1)" ng-class="{active: pager.currentPage == item+1 }">{{item+1}}</a></li>
+        <li ng-if="!ellipsis"><span>...</span></li>
+        <li ng-repeat="item in last track by $index"><a ng-click="select(item)" ng-class="{active: pager.currentPage == item }">{{item}}</a></li>
     </ul>
-    <button class="button"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous page</button>
-    <button class="button primary pull-right">Next page <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    <button class="button" ng-click="previous()" ng-disabled="prevDisabled"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous page</button>
+    <button class="button primary pull-right" ng-disabled="nextDisabled" ng-click="next()">Next page <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
 </div>

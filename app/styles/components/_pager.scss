@@ -7,8 +7,7 @@
         margin: 3rem 0;
         padding: 0;
         li{
-
-            a{
+            a,span{
                 padding: 8px 0;
                 border-radius: 3px;
                 text-decoration: none;
@@ -20,7 +19,7 @@
                     background-color: $primary;
                     color: #FFF;
                 }
-                &:hover{
+                &:hover:not(.active){
                     background-color: darken($grey, 10%);
                 }
             }

@@ -10,3 +10,11 @@
     border-color: $primary;
     color: $white;
 }
+
+
+.button[disabled]{
+    background-color: $grey;
+    border-color: darken($grey, 10%);
+    color: $text-grey;
+    cursor: not-allowed;
+}

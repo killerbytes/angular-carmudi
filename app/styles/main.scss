@@ -1,7 +1,7 @@
 $primary: #165AA7;
 $secondary: #f36519;
 $grey: #f2f2f2;
-$text-gray: #696969;
+$text-grey: #696969;
 $white: #FFF;
 $black: #1a1a1a;
 $body-text: #363D41;
@@ -28,6 +28,8 @@ body{
 h2{
   font-size: 20px;
 }
+a,
+button{ cursor: pointer; }
 
 .container{
   display: flex;
@@ -89,7 +91,7 @@ footer{
 }
 
 .location{
-  color: $text-gray;
+  color: $text-grey;
   .fa{
     margin-right: 3px;
   }
@@ -103,4 +105,13 @@ footer{
   .location{
     margin-bottom: 4rem;
   }
+}
+
+.thumbnail{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    img{
+        display: none;
+    }                
 }

@@ -11,7 +11,7 @@ angular.module('carmudiApp')
   .service('carService', function ($http, $q, $filter, api) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     function findAll(page, limit){
-      page = page || 0;
+      page = page || 1;
       limit = limit || 10;
       var d = $q.defer();
       $http.get(api.url + "/cars", {
