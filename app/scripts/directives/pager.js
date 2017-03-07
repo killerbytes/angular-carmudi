@@ -23,7 +23,16 @@ angular.module('carmudiApp')
 
           scope.pages = Math.ceil(parseInt(pager.total) / pager.limit );
 
-          scope.items = [...Array(scope.pages).keys()].slice(0,4);
+          // scope.items = [...Array(scope.pages).keys()].slice(0,4);
+
+          var items = [];
+
+          for (var i = 0; i <= scope.pages; i++) {
+            items.push(i);
+          }
+
+          scope.items = items.slice(0, 4);
+
           scope.ellipsis = scope.pages - 3 <= scope.items[3] ? true : false;
           scope.last = [scope.pages-1, scope.pages];
 
