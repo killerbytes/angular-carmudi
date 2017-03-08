@@ -12,9 +12,12 @@ angular.module('carmudiApp')
     $scope.thumbnail = "http://placehold.it/385x286";
 
     if($routeParams.id){
+      $scope.loading = true;
       carService.findRecord($routeParams.id).then(function(res){
         $scope.model = res;
+        $scope.loading = false;
       }, function(err){
+        $scope.loading = false;
         //handle error
       })
     }

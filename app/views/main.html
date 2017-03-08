@@ -7,6 +7,10 @@
             <input type="text" id="search-input" ng-model="query.name" placeholder="Search...">
         </div>
         <div class="results-title">Displaying {{(pager.currentPage * pager.limit)-pager.limit+1}}-{{pager.currentPage * pager.limit >= pager.total ? pager.total : pager.currentPage * pager.limit}} of {{pager.total}} Results</div>
+        
+        <div ng-if="loading" class="loader-container">
+            <div class="loader"></div>
+        </div>
         <ul class="list-results">
             <li ng-repeat="item in results | filter: query track by $index">
                 <a href="#/details/{{item.id}}"><result-item item="item"></result-item></a>
